@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html style="min-width:600px;">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container p-3 ">
+        <h3>Radiation Oncology Case Log Importer</h3>
+        <h5>Configure Presets</h5>
+        <div class="py-1">
+          <label for="year">Year:</label>
+          <select id="year" name="year" class="form-control">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+        <div class="py-1">
+          <label for="location">Location:</label>
+          <select id="location" class="form-control">
+            <option value="12365">City of Hope National Medical Center</option>
+            <option value="15755">St Joseph Hospital (Orange)</option>
+            <option value="19367">Other Site</option>
+          </select>
+        </div>
+        <h5>Select a CSV File With Cases</h5>
+        <div class="py-2"><input type="file" id="file" name="filename" class="form-control"></div>
+        <div class="py-2"><button id="uploadCases" class="btn btn-success form-control">Submit</button></div>
+        <ul id="caselist"></ul>
+        <script src="popup.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> -->
+    </div>
+  </body>
+</html>
